@@ -7,14 +7,13 @@ body {
     justify-content: center;
     align-items: center;
     font-family: inter ;
-    margin: 0px;
+    margin: 30px;
     height: 100vh;
 }
 
 
 #container{
  background-color: rgb(31, 41, 55);
- height: 1000px;
 }
 
 #heading{
