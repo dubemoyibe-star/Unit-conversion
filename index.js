@@ -1,15 +1,13 @@
-/*
-1 meter = 3.281 feet
-1 liter = 0.264 gallon
-1 kilogram = 2.204 pound
-*/
 
+// Variables to store elements and input value
 let mynumber = []
-let massEl = document.getElementById("mass-el")
-let volumeEl = document.getElementById("volume-el")
-let lengthEl = document.getElementById("length-el")
-let inputEl =  document.getElementById("input-el")
-let buttonEl = document.getElementById("button-el")
+const massEl = document.getElementById("mass-el")
+const volumeEl = document.getElementById("volume-el")
+const lengthEl = document.getElementById("length-el")
+const inputEl =  document.getElementById("input-el")
+const buttonEl = document.getElementById("button-el")
+
+// Event listener to respond to button click
 buttonEl.addEventListener("click", function (){
     mynumber = []
     mynumber.push(inputEl.value)
@@ -18,6 +16,7 @@ buttonEl.addEventListener("click", function (){
     conversionmass()
 })
 
+// Functions to do the conversion and display the results
 function conversionLength(){
     let meterFeet = mynumber[0] * 3.281
     let meterFeetRounded =  parseFloat(meterFeet.toFixed(3))
@@ -37,7 +36,6 @@ function conversionvolume(){
      ${mynumber[0]} litres = ${litresGallonsRounded} gallons | ${mynumber[0]} gallons = ${gallonsLitresRounded} litres
      `   
 }
-
 
 function conversionmass(){
     let kilogramsPounds = mynumber[0] * 2.204
